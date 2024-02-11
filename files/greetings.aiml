@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+    
+<category>
+    <pattern>HI *</pattern>
+    <template>Hello! Can you please provide your name for me? </template>
+</category>
+
+<category>
+    <pattern>HELLO</pattern>
+    <template><srai> HI * </srai></template>
+</category>
+
+<category>
+    <pattern>MY NAME IS *</pattern>
+    <template>Nice to meet you, <set name="name"><star/></set>, <br/>
+    let's talk about your future career! Type "start" to get started!
+    </template>
+</category>
+
+<category>
+    <pattern>START</pattern>
+    <template>Which do you prefer, hardware or software? <br/>
+        <button>
+            <text>Hardware</text>
+            <postback>HARDWARE</postback>
+        </button>
+        
+        <button>
+            <text>Software</text>
+            <postback>SOFTWARE</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>HARDWARE</pattern>
+    <template>If you prefer working with hardware over software, then perhaps looking into the field of computer hardware engineering could be a great fit for you. For more information on this
+    career path please
+    
+    <link>
+        <text> click here!</text>
+        <url>https://www.careerexplorer.com/careers/computer-hardware-engineer/</url>
+    </link>
+    
+    </template>
+</category>
+
+<category>
+    <pattern>SETUP</pattern>
+    <template>Setting up the hardware to get computers/servers in a functioning state, as well as running the necessary cables to allow for networking and communication is a very important role.
+    If this </template>
+</category>
+
+<category>
+    <pattern>SOFTWARE</pattern>
+    <template>I see, so in regards to software, do you prefer to use or create it?
+    
+        <button>
+            <text>Create it</text>
+            <postback>CREATE </postback>
+        </button>
+        
+        <button>
+            <text>Use it</text>
+            <postback>USE</postback>
+        </button>
+        
+        <button>
+            <text>Manage it</text>
+            <postback>MANAGE</postback>
+        </button>
+        
+    </template>
+</category>
+
+<category>
+    <pattern>CREATE</pattern>
+    <template>When creating writing a new program, do you prefer the creative or logical aspects of the process?
+        <button>
+            <text>Creative</text>
+            <postback>CREATIVE</postback>
+        </button>
+        
+        <button>
+            <text>Logical</text>
+            <postback>LOGIC</postback>
+        </button>
+    
+    </template>
+</category>
+
+<category>
+    <pattern>CREATIVE</pattern>
+    <template>If you can write code but prefer the creative aspects of coding, perhaps something on the front-end of the web development field would be a good match for you. If you would like
+    more information on this field,
+        <link>
+            <text> click here</text>
+            <url>https://www.careerexplorer.com/careers/web-developer/</url>
+        </link>
+    </template>
+</category>
+
+<category>
+    <pattern>LOGIC</pattern>
+    <template>If you enjoy the logic puzzles that come with coding, take a look at the field of back-end, or server-side, programming. To learn more about this career path and whether it would be a good
+    match for you, please
+    <link>
+        <text> click here!</text>
+        <url>https://www.careerexplorer.com/careers/back-end-developer/</url>
+    </link>
+    </template>
+</category>
+
+
+<category>
+    <pattern>USE</pattern>
+    <template>You sound like a creative type of person, perhaps something in the field of graphic design would be best for you. If you would like more information on this path,
+            <link>
+                <text> click here</text>
+                <url>https://www.careerexplorer.com/careers/graphic-designer/</url>
+            </link></template>
+</category>
+
+<category>
+    <pattern>MANAGE</pattern>
+    <template>If you like the management of tools and environments necessary to keep software products running and updated, take a look at the development operations field. I believe this would align
+    with your current interests. More information on this field can be found by
+    <link>
+        <text> clicking here!</text>
+        <url>https://www.careerexplorer.com/careers/devops-developer/</url>
+    </link>
+    
+    </template>
+</category>
+
+</aiml>
