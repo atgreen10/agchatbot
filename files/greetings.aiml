@@ -13,6 +13,11 @@
 </category>
 
 <category>
+    <pattern>HI</pattern>
+    <template><srai>HI *</srai></template>
+</category>
+
+<category>
     <pattern>MY NAME IS *</pattern>
     <template>Nice to meet you, <set name="name"><star/></set>, <br/>
     let's talk about your future career! Type "start" to get started!
@@ -36,6 +41,22 @@
 
 <category>
     <pattern>HARDWARE</pattern>
+    <template> Do you like working with the individual pieces of hardware or setting up hardware components?
+    
+    <button>
+        <text>Components</text>
+        <postback>COMPONENTS</postback>
+    </button>
+    
+    <button>
+        <text>Setup</text>
+        <postback>SETUP</postback>
+    </button>
+    </template>
+</category>
+
+<category>
+    <pattern>COMPONENTS</pattern>
     <template>If you prefer working with hardware over software, then perhaps looking into the field of computer hardware engineering could be a great fit for you. For more information on this
     career path please
     
@@ -50,12 +71,17 @@
 <category>
     <pattern>SETUP</pattern>
     <template>Setting up the hardware to get computers/servers in a functioning state, as well as running the necessary cables to allow for networking and communication is a very important role.
-    If this </template>
+    Although, the role of Network Administrator does usually require some software skills as well, this can be a hardware focused position. More information on this role can be found 
+    <link>
+        <text>here!</text>
+        <url>https://www.careerexplorer.com/careers/network-administrator/</url>
+    </link>
+    </template>
 </category>
 
 <category>
     <pattern>SOFTWARE</pattern>
-    <template>I see, so in regards to software, do you prefer to use or create it?
+    <template>I see, so on the topic of software, do you prefer to use or create it?
     
         <button>
             <text>Create it</text>
@@ -77,7 +103,7 @@
 
 <category>
     <pattern>CREATE</pattern>
-    <template>When creating writing a new program, do you prefer the creative or logical aspects of the process?
+    <template>When writing a new program, do you prefer the creative or logical aspects of the process?
         <button>
             <text>Creative</text>
             <postback>CREATIVE</postback>
